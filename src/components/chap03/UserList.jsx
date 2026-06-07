@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
+import { UserRow } from './UserRow';
+import { AddUserForm } from './AddUserForm';
 
 export const UserList = () => {
-    const [newUserName, setNewUserName] = useState("");
     const [users,setUsers] = useState([
         { id: crypto.randomUUID(), name: "taro"},
         { id: crypto.randomUUID(), name: "jiro"},
     ]);
 
-    const addUser = () => {
+    const addUser = (newUserName) => {
         setUsers([...users, {id: crypto.randomUUID(), name: newUserName }]);
     };
 
@@ -15,17 +16,22 @@ export const UserList = () => {
         setUsers(users.map((user) => user.id === id ? { ...user, name: newName } : user))
     };
 
+    const deleteUser = (id) => {
+        setUsers(
+            users.filter((user) => user.id !==id )
+        );
+    }
+
+    console.log("userList")
+
   return (
     <div>
         <ul>
             {users.map((user) => (
-                <li key={user.id}>
-                    ID: {user.id}, Name: {user.name}
-                </li>
+                <UserRow key={user.id} user={user} deleteUser={deleteUser} />
             ))}
         </ul>
-        <input type="text" value={newUserName} onChange={(e) => setNewUserName(e.target.value)}/>
-        <button onClick={addUser}>追加</button>
+        <AddUserForm addUser={addUser}/>
     </div>
   )
 }
