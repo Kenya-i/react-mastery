@@ -1,5 +1,6 @@
 import './App.css'
-import { FruitManager } from './components/chap05/FruitManager'
+// import { FruitManager } from './components/chap05/FruitManager'
+import { FruitManagerWithoutMemo } from './components/chap05/FruitManagerWithoutMemo'
 // import { TextInputWithFocusButton } from './components/chap05/TextInputWithFocusButton'
 // import { UserList } from './components/chap04/UserList'
 // import { CountUp } from './components/chap05/CountUp'
@@ -53,7 +54,7 @@ function App() {
       {/* <UserList /> */}
       {/* <CountUp /> */}
       {/* <TextInputWithFocusButton /> */}
-      <FruitManager />
+      <FruitManagerWithoutMemo />
     </>
   )
 }
