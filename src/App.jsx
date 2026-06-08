@@ -1,5 +1,8 @@
 import './App.css'
-import { UserList } from './components/chap04/UserList'
+import { FruitManager } from './components/chap05/FruitManager'
+// import { TextInputWithFocusButton } from './components/chap05/TextInputWithFocusButton'
+// import { UserList } from './components/chap04/UserList'
+// import { CountUp } from './components/chap05/CountUp'
 // import { ToggleDocumentKeyListener } from './components/chap04/ToggleDocumentKeyListener'
 // import { Timer } from './components/chap04/Timer'
 // import { UserDetail } from './components/chap04/UserDetail'
@@ -47,7 +50,10 @@ function App() {
       {/* <Timer /> */}
       {/* <UserDetail /> */}
       {/* <ToggleDocumentKeyListener /> */}
-      <UserList />
+      {/* <UserList /> */}
+      {/* <CountUp /> */}
+      {/* <TextInputWithFocusButton /> */}
+      <FruitManager />
     </>
   )
 }
