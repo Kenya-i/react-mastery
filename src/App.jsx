@@ -1,5 +1,8 @@
 import './App.css'
-import { UserList } from './components/chap06/UserList'
+import { Header } from './components/chap07/header'
+import { Main } from './components/chap07/Main'
+import { LoginUserProvier } from './context/LoginUserContext'
+// import { UserList } from './components/chap06/UserList'
 // import { CounterControls } from './components/chap06/CounterControls'
 // import { CounterControls2 } from './components/chap06/CounterControls2'
 // import { FruitManager } from './components/chap05/FruitManager'
@@ -47,7 +50,7 @@ function App() {
       <RemainingTickets remaining={3} userName="taro"/>
       <RemainingTickets remaining={0} />
       <RemainingTickets userName="jiro"/> */}
-      <UserList />
+      {/* <UserList /> */}
       {/* <CountUp />
       <UserForm />
       <UserList /> */}
@@ -60,6 +63,10 @@ function App() {
       {/* <FruitManagerWithoutMemo /> */}
       {/* <CounterControls />
       <CounterControls2 /> */}
+      <LoginUserProvier>
+        <Header/>
+        <Main />
+      </LoginUserProvier>
     </>
   )
 }
