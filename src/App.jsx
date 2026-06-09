@@ -1,6 +1,7 @@
 import './App.css'
-import { CounterControls } from './components/chap06/CounterControls'
-import { CounterControls2 } from './components/chap06/CounterControls2'
+import { UserList } from './components/chap06/UserList'
+// import { CounterControls } from './components/chap06/CounterControls'
+// import { CounterControls2 } from './components/chap06/CounterControls2'
 // import { FruitManager } from './components/chap05/FruitManager'
 // import { FruitManagerWithoutMemo } from './components/chap05/FruitManagerWithoutMemo'
 // import { TextInputWithFocusButton } from './components/chap05/TextInputWithFocusButton'
@@ -45,8 +46,8 @@ function App() {
       <StatusMessage status="error"/>
       <RemainingTickets remaining={3} userName="taro"/>
       <RemainingTickets remaining={0} />
-      <RemainingTickets userName="jiro"/>
-      <UserList /> */}
+      <RemainingTickets userName="jiro"/> */}
+      <UserList />
       {/* <CountUp />
       <UserForm />
       <UserList /> */}
@@ -57,8 +58,8 @@ function App() {
       {/* <CountUp /> */}
       {/* <TextInputWithFocusButton /> */}
       {/* <FruitManagerWithoutMemo /> */}
-      <CounterControls />
-      <CounterControls2 />
+      {/* <CounterControls />
+      <CounterControls2 /> */}
     </>
   )
 }
