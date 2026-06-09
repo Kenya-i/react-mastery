@@ -9,7 +9,7 @@ export const LoginUserProvier = ({ children }) => {
   const logout = () => setLoginUser(null);
 
   return (
-    <LoginUserContext.Provider value={{ loginUser, login, logout}}>
+    <LoginUserContext.Provider value={{ loginUser, login, logout, notifications, addNotification}}>
         {children}
     </LoginUserContext.Provider>
   )

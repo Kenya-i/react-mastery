@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { LoginUserContext } from '../../context/LoginUserContext';
 
 export const UserMenu = () => {
-   const [ loginUser,login, logout ] = useContext(LoginUserContext);
+   const { loginUser,login, logout } = useContext(LoginUserContext);
   
   
     return (
