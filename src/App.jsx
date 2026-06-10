@@ -1,5 +1,5 @@
 import './App.css'
-import { AppRouter } from './route/declarativeRouter'
+import { AppRouter } from './route/dataRouter'
 // import { Header } from './components/chap07/header'
 // import { Main } from './components/chap07/Main'
 // import { LoginUserProvier } from './context/LoginUserContext'
